@@ -9,21 +9,3 @@ steps:
       failed:
         image: containers101/demochat:test-failed
         command: 'gulp test'
-    on_success: # Execute only once the step succeeded
-      metadata: # Declare the metadata attribute
-        set: # Specify the set operation
-          - success: # Select any number of target images
-            - qa: pending
-
-    on_fail: # Execute only once the step failed
-      metadata: # Declare the metadata attribute
-        set: # Specify the set operation
-          - fail: # Select any number of target images
-            - exit_code: 1
-
-    on_finish: # Execute in any case
-      metadata: # Declare the metadata attribute
-        set: # Specify the set operation
-          - done: # Select any number of target images
-            - is_main:
-                evaluate: "'${{CF_BRANCH}}' == 'main'"
