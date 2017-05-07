@@ -12,7 +12,7 @@ steps:
     composition_candidates:
       s1:
         image: codefreshio/cf-compose-model:master
-        command: npm run unit_test
+        command: /bin/bash -c 'sleep 20 && npm run unit_test'
       s2:
         image: codefreshio/cf-compose-model:master
         command:  npm run e2e_test
