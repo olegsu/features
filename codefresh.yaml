@@ -5,9 +5,10 @@ steps:
   composition:
     type: composition
     composition:
-      s1:
-        image: ubuntu
-    composition_candidatas:
+      version: '2'
+        s1:
+          image: ubuntu
+    composition_candidates:
       s1:
         image: codefreshio/cf-compose-model:master
         command: npm run unit_test
