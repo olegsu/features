@@ -1,0 +1,5 @@
+version: '3'
+services:
+  failed:
+    image: containers101/demochat:test-failed
+    command: 'gulp test'
