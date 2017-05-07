@@ -6,6 +6,7 @@ steps:
     type: composition
     composition:
       version: '2'
+      services:
         s1:
           image: ubuntu
     composition_candidates:
