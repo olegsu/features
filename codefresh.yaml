@@ -5,6 +5,10 @@ steps:
     type: composition
     title: testing in composition
     composition: ./docker-compose.yaml
+    composition_candidates:
+      failed:
+        image: containers101/demochat:test-failed
+        command: 'gulp test'
     on_success: # Execute only once the step succeeded
       metadata: # Declare the metadata attribute
         set: # Specify the set operation
