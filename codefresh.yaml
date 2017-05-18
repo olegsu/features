@@ -16,3 +16,14 @@ steps:
       s1:
         image: codefreshio/cf-compose-model:master
         command: /bin/bash -c 'sleep 30 && npm run unit_test'
+
+    composition:
+      type: launch-composition
+      composition:
+        version: '2'
+        services:
+          s3:
+            image: ubuntu
+            command: /bin/bash -c 'sleep 30 && echo HI'
+          s1:
+            image: node
