@@ -17,7 +17,7 @@ steps:
         image: codefreshio/cf-compose-model:master
         command: /bin/bash -c 'sleep 30 && npm run unit_test'
 
-    composition:
+    launch-composition:
       type: launch-composition
       composition:
         version: '2'
