@@ -6,9 +6,6 @@ steps:
     type: composition
     composition: compose.yaml
     composition_candidates:
-      s2:
-        image: ubuntu
-        container_name: 'test'
-      s1:
+      s3:
         image: codefreshio/cf-compose-model:master
         command: /bin/bash -c 'sleep 30 && npm run unit_test'
