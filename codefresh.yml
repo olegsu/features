@@ -1,0 +1,10 @@
+version: '1.0'
+steps:
+  
+  deploy_to_k8
+    type: deploy
+    kind: kubernetes
+    cluster: ''
+    namespace: ''
+    service: ''
+   
