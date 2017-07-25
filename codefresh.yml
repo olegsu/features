@@ -4,7 +4,7 @@ steps:
   deploy_to_k8:
     type: deploy
     kind: kubernetes
-    cluster: ''
-    namespace: ''
-    service: ''
+    cluster:  demochat@codefresh-load
+    namespace: default
+    service: p4
    
