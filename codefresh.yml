@@ -7,5 +7,5 @@ steps:
     kind: kubernetes
     cluster:  demochat@codefresh-load
     namespace: default
-    service: p4
+    service: p7
    
