@@ -2,10 +2,10 @@ version: '1.0'
 steps:
   
   deploy_to_k8:
-    title: deployinh to cluster
+    title: deploying to cluster
     type: deploy
     kind: kubernetes
-    cluster:  demochat@codefresh-load
-    namespace: default
-    service: p7
+    cluster:  cf-load@codefresh-load
+    namespace: olsynt
+    service: test
    
