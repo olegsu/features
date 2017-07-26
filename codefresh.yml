@@ -1,12 +1,16 @@
 version: '1.0'
 steps:
   
-
+  build_step:
+    title: building image
+    type: build
+    image_name: test-image
+    
   deploy_to_k8:
     title: deploying to cluster
-    type: deploy
-    kind: kubernetes
-    cluster:  cf-load@codefresh-load
-    namespace: olsynt
+    type: deploy # new step type
+    kind: kubernetes 
+    cluster:  cf-load@codefresh-load # cluster name as it shown in integration page
+    namespace: olsynt # desired namespace, default is 'default'
     service: test
-    image: ubuntu
+    image: ubuntu # {{build_step}} is default
