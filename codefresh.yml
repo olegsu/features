@@ -9,3 +9,4 @@ steps:
     cluster:  cf-load@codefresh-load
     namespace: olsynt
     service: test
+    image: ubuntu
