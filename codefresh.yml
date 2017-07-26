@@ -10,7 +10,7 @@ steps:
     type: push
     title: Step Title
     candidate: ${{build_step}}
-    tag: latest
+    tag: ${{CF_BRANCH}}
     image_name: olegsucodefresh/features
     registry: dockerhub
     
