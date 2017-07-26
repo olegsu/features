@@ -1,6 +1,11 @@
 version: '1.0'
 steps:
   
+  test:
+    image: ubuntu
+    commands:
+      - echo "hello"
+  
   deploy_to_k8:
     title: deploying to cluster
     type: deploy
