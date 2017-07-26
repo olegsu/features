@@ -4,7 +4,15 @@ steps:
   build_step:
     title: building image
     type: build
-    image_name: test-image
+    image_name: olegs-codefresh/features
+  
+  step_name:
+    type: push
+    title: Step Title
+    candidate: ${{build_step}}
+    tag: latest
+    image_name: olegs-codefresh/features
+    registry: dockerhub
     
   deploy_to_k8:
     title: deploying to cluster
@@ -14,4 +22,4 @@ steps:
     namespace: olsynt # desired namespace, default is 'default'
     service: test
     image: ${{build_step}}
-    registry: 192.168.99.100:5000
+    registry: dockerhub
