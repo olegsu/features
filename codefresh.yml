@@ -14,3 +14,4 @@ steps:
     namespace: olsynt # desired namespace, default is 'default'
     service: test
     image: ${{build_step}}
+    registry: 192.168.99.100:5000
