@@ -20,7 +20,7 @@ steps:
     kind: kubernetes 
     cluster:  cf-load@codefresh-load # cluster name as it shown in integration page
     namespace: olsynt # desired namespace, default is 'default'
-    service: test
+    service: test5
     candidate: ${{build_step}}
     registry: cfcr
     when:
