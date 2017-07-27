@@ -23,3 +23,7 @@ steps:
     service: test
     candidate: ${{build_step}}
     registry: dockerhub
+    when:
+      branch:
+        only:
+          - master
