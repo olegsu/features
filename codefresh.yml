@@ -23,7 +23,7 @@ steps:
     service: test5
     candidate:
       image: ${{build_step}}
-#      registry: dockerhub
+      registry: dockerhub
     when:
       branch:
         only:
