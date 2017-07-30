@@ -21,8 +21,8 @@ steps:
     cluster:  cf-load@codefresh-load # cluster name as it shown in integration page
     namespace: olsynt # desired namespace, default is 'default'
     service: test5
-#    candidate:
-#      image: ${{build_step}}
+    candidate:
+      image: ${{build_step}}
 #      registry: dockerhub
     when:
       branch:
