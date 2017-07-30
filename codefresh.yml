@@ -22,7 +22,7 @@ steps:
     namespace: olsynt # desired namespace, default is 'default'
     service: test5
     candidate: ${{build_step}}
-    registry: cfcr
+    registry: dockerhub
     when:
       branch:
         only:
