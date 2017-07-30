@@ -6,13 +6,13 @@ steps:
     type: build
     image_name: olegsucodefresh/features
   
-  #step_name:
-  #  type: push
-  #  title: Step Title
-  #  candidate: ${{build_step}}
-  #  tag: ${{CF_BRANCH}}
-  #  image_name: olegsucodefresh/features
-  #  registry: dockerhub
+  step_name:
+    type: push
+    title: Step Title
+    candidate: ${{build_step}}
+    tag: ${{CF_BRANCH}}
+    image_name: olegsucodefresh/features
+    registry: dockerhub
     
   deploy_to_k8:
     title: deploying to cluster
