@@ -2,7 +2,7 @@
 
 process.on('SIGTERM', () => {
   console.log('Killing latter')
-  setTimeout(() => {}, 60000)
+  setTimeout(() => {}, 180000)
 });
 
 var http = require('http');
